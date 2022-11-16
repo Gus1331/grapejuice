@@ -45,6 +45,7 @@ html {
 html {
   scroll-behavior: smooth;
 }
+
 /* W3 schools
   ref: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
@@ -69,36 +70,43 @@ body {
   background: linear-gradient(45deg, var(--color03) 1%, var(--color04) 15%, var(--color05) 80%, var(--color09)) no-repeat fixed;
 }
 
+
+
 header {
-  box-sizing: unset;
+  box-sizing: border-box;
   background-color: var(--white);
   color: var(--black);
-  position: static;
+  position: fixed;
   width: 100%;
-  height: 97px;
+  height: 127px;
   padding: 15px;
   overflow: hidden;
+  top: 0;
 }
-header ::selection{
+
+header ::selection {
   background-color: unset;
 }
-#logoTopDiv{
-  background-color: var(--color09) ;
+
+#logoTopDiv {
+  background-color: var(--color09);
   position: relative;
   display: inline-block;
   width: 100px;
   height: 56%;
   overflow: hidden;
   border-collapse: collapse;
-  border-radius: 47% 
+  border-radius: 47%
 }
-#logoTopImg{
+
+#logoTopImg {
   position: absolute;
   width: 60%;
   transform: translateX(-35%);
   right: 0;
 }
-h1{
+
+h1 {
   position: absolute;
   display: inline-block;
   font-family: var(--title);
@@ -108,13 +116,15 @@ h1{
   color: var(--color11);
   cursor: default;
 }
-#headerNav{
+
+#headerNav {
   position: absolute;
   display: inline-block;
   right: 15px;
   height: 56px;
 }
-#headerNav > ul > li{
+
+#headerNav>ul>li {
   display: inline-block;
   font-size: 1.2em;
   height: 56px;
@@ -122,24 +132,99 @@ h1{
   text-align: center;
   cursor: pointer;
 }
-#headerNav > ul > :hover{
-  text-shadow: 0 0  1px var(--black );
+
+#headerNav>ul> :hover {
+  text-shadow: 0 0 1px var(--black);
   transition: 90ms;
 }
-#headerNav > ul > :active{
+
+#headerNav>ul> :active {
   background-color: var(--color09);
   border-radius: 5px;
   transition: 100ms;
 }
-#navMiddleLi{
+
+#navMiddleLi {
   border-right: 3px solid var(--color09);
   border-left: 3px solid var(--color09);
 }
-#headerLine{
+
+#headerLine {
   position: absolute;
   display: block;
   width: 100%;
   border: 2px solid var(--color03);
   margin-top: 20px;
   transform: translateX(-15px);
+  transition: 2000ms;
+  /* box-shadow: 0 0 30px 4px var(--color04); */
+}
+
+
+
+main {
+  background-color: var(--white);
+  position: relative;
+  margin: 157px auto;
+  padding: 10px;
+  width: 84%;
+  border-radius: 3px;
+}
+
+#productFrame {
+  display: inline-block;
+  position: relative;
+  min-width: 450px;
+  width: 56%;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 15px 0;
+  background-color: var(--color06);
+}
+
+.productImg {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+}
+
+#imgA {
+  position: relative;
+  right: 0;
+}
+
+#imgB {
+  right: -100%;
+}
+
+#productNav {
+  position: static;
+  height: 28px;
+  padding: 6px auto;
+}
+
+#productNavUl {
+  position: absolute;
+  width: 67px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.navPoint {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+
+
+footer {
+  background-color: aliceblue;
+  width: 10px;
+  height: 200vh;
 }
