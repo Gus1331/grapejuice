@@ -82,6 +82,7 @@ header {
   padding: 15px;
   overflow: hidden;
   top: 0;
+  box-shadow: 0 0 4px var(--black);
 }
 
 header ::selection {
@@ -166,7 +167,7 @@ main {
   background-color: var(--white);
   position: relative;
   margin: 157px auto;
-  padding: 10px;
+  padding: 13px;
   width: 84%;
   border-radius: 3px;
 }
@@ -174,6 +175,7 @@ main {
 #productFrame {
   display: inline-block;
   position: relative;
+  margin-bottom: 70px;
   min-width: 450px;
   width: 56%;
   overflow: hidden;
@@ -220,6 +222,101 @@ main {
   cursor: pointer;
   background-color: var(--white);
 }
+
+#productContent{
+  display: inline-block;
+  position: absolute;
+  min-width: 380px;
+  padding: 0 20px;
+}
+#productName{
+  padding: 0 auto;
+  background-color: var(--black);
+  color: var(--white);
+  margin: 4px auto;
+  font-size: 1.8em;
+  text-align: center;
+  width: 93%;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  text-shadow: 0 0 2px var(--white);
+}
+.nameLines{
+  background-color: var(--black);
+  height: 5px;
+  border-radius: 1px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+#productDescription , #productBuySection{
+  padding: 16px;
+}
+#productDescription > p {
+  text-align: justify;
+  text-indent: 19px;
+}
+.btnBuy{
+  background-color: var(--color07);
+  border: 1px solid var(--color08);
+  font-size: 1.3em;
+  padding: 5px;
+  cursor: pointer;
+}
+.btnBuy:active{
+  background-color: var(--color08);
+  transition: 50ms;
+}
+#btnBuy0{
+  padding: 7px;
+  font-size: 1.7em;
+  position: relative;
+  width: 55%;
+  max-width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+#btnBuy12{
+  padding: 5% 0;
+  position: relative;
+  break-inside: avoid;
+}
+#btnBuy1{
+  position: absolute;
+  width: 58%;
+  font-size: 1.2em;
+  height: 100%;
+  border: 1px solid var(--color12);
+  text-indent: 5%;
+  max-height: 100px;
+}
+#btnBuy2{
+  position: absolute;
+  min-width: 42%;
+  right: 0;
+  height: 100%;
+  max-height: 100px;
+}
+
+
+#productSimilar{
+  background-color: var(--color12);
+  position: relative;
+  width: 200%;
+  min-height: 280px;
+  left: -2%;
+  margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
