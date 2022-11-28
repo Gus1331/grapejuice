@@ -25,11 +25,11 @@
             <img class="productImg" id="imgB" src="content/back.png" alt="Suco De Uva Tinto Integral">
             <div id="productNav">
                 <ul id="productNavUl">
-                    <li class="navPoint" onclick="();">
+                    <li class="navPoint" onclick="imgPosition0();">
                     </li>
-                    <li class="navPoint" onclick="();">
+                    <li class="navPoint" onclick="imgPosition1();">
                     </li>
-                    <li class="navPoint" onclick="();">
+                    <li class="navPoint" onclick="imgPosition2();">
                     </li>
                 </ul>
             </div>
@@ -89,16 +89,16 @@
         </section>
 
         <article id="badgeIcons">
-            <div id="badgeBox0" class="badgeBox">
-                <span id="badgeText0" class="badgeElement">Entrega rápida em todo Brasil. Nosso serviço de entrega conta com preço acessivel e alcança todos os cantinhos do país, com previsão de entrega até 6 dias úteis.</span>
+            <div id="badgeBox0" class="badgeBox" onmouseout="badgeOff();" onmouseover="badgeEffect0();" onclick="badgeEffect0();">
+                <span id="badgeText0" class="badgeElement , badgeText">Nosso serviço de entrega conta com preço acessivel e alcança todos os cantinhos do país, entrega até 6 dias úteis.</span>
                 <img id="badgeIcon0" class="badgeElement" src="content/truck-b.png">
             </div>
-            <div id="badgeBox1" class="badgeBox">
-                <span id="badgeText0" class="badgeElement">Nossa vinícula ficou em 13º lugar no concurso "The International Wine Contest" apresentando nossa especial safra de 2018. Atuamos desde XXXX produzindo e tentando ser melhores a cada dia.</span>
+            <div id="badgeBox1" class="badgeBox" onmouseout="badgeOff();" onmouseover="badgeEffect1();" onclick="badgeEffect1();">
+                <span id="badgeText1" class="badgeElement , badgeText">Nossa vinícula ficou em 13º lugar no concurso "The International Wine Contest" apresentando nossa especial safra de 2018.</span>
                 <img id="badgeIcon1" class="badgeElement" src="content/medal-b.png">
             </div>
-            <div id="badgeBox2" class="badgeBox">
-                <span id="badgeText0" class="badgeElement">A sua compra é totalmente segura conosco, confidencialidade e privacidade da compra é algo que presamos.</span>
+            <div id="badgeBox2" class="badgeBox" onmouseout="badgeOff();" onmouseover="badgeEffect2();" onclick="badgeEffect2();">
+                <span id="badgeText2" class="badgeElement , badgeText">A sua compra é totalmente segura conosco, confidencialidade e privacidade da compra é algo que presamos.</span>
                 <img id="badgeIcon2" class="badgeElement" src="content/lock-b.png">
             </div>
         </article>
@@ -111,9 +111,9 @@
         <h1>St. Monica</h1>
         <nav id="headerNav">
             <ul>
-                <li>Sobre nós</li>
+                <li onclick="screenOn0();">Sobre nós</li>
                 <li id="navMiddleLi">Contato</li>
-                <li>Projeto</li>
+                <li onclick="screenOn1();">Projeto</li>
             </ul>
         </nav>
         <hr id="headerLine">
@@ -140,18 +140,16 @@
         </div>
     </footer>
 
-    <article class="screenBack" onclick="">
-        <div class="screenContent">
-            <img src="content/close-icon.png" onclick="" class="screenClose">
-
-        </div>
+    <article class="screenBack" id="screen" onclick="screenClose();">
     </article>
-    <article class="screenBack" onclick="">
-        <div class="screenContent">
-            <img src="content/close-icon.png" onclick="" class="screenClose">
-
-        </div>
-    </article>
+    <div class="screenContent" id="screen0">
+        <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
+        <h2 class="screenTitle">Sobre Nós</h2>
+    </div>
+    <div class="screenContent" id="screen1">
+        <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
+        <h2 class="screenTitle">O Projeto</h2>
+    </div>
 
 
     

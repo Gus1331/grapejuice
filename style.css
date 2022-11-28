@@ -35,7 +35,7 @@ html {
   --color10: rgb(166, 166, 166);
   --color11: rgb(033, 034, 038);
   --color12: rgb(052, 056, 064);
-  --color13: rgb(074, 079, 089);
+  --color13: rgba(74, 79, 89, 0.548);
   --color14: rgb(095, 102, 115);
 
   --black: rgb(000, 000, 000);
@@ -85,7 +85,7 @@ header {
   box-shadow: 0 0 4px var(--black);
 }
 
-header ::selection {
+header ::selection , .screenClose::selection , h3::selection {
   background-color: unset;
 }
 
@@ -189,6 +189,7 @@ main {
   display: inline-block;
   position: absolute;
   width: 100%;
+  transition: 666ms;
 }
 
 #imgA {
@@ -363,32 +364,24 @@ main {
 #badgeIcons{
   position: relative;
   width: 100%;
-  height: 15vw;
+  height: 12vw;
   margin-bottom: 6vw;
-
-  background-color: crimson;
+  overflow: none;
 }
 .badgeBox{
   position: absolute;
-  width: 20%;
+  width: 15%;
   height: 100%;
-  overflow: hidden;
 }
 #badgeBox0{
-  left: 0;
-  
-  background-color: red;
+  left: 0;  
 }
 #badgeBox1{
   transform: translateX(50%);
   right: 50%;
-
-  background-color: green;
 }
 #badgeBox2{
   right: 0;
-
-  background-color: blue;
 }
 .badgeElement{
   position: absolute;
@@ -396,8 +389,13 @@ main {
   height: 100%;
   border: 4px dashed var(--color13);
   color: var(--white);
-  font-size: 0.9em;
-  padding: 20px;
+  font-size: 0.7em;
+  padding: 10%;
+  transition: 750ms;
+  border-radius: 3px;
+  }
+.badgeText{
+  color: rgba(0, 0, 0, 0);
 }
 
 
@@ -429,10 +427,11 @@ footer{
   width: 100vw;
   height: 100vh;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.24);
+  background-color: rgba(214, 214, 214, 0.432);
+  display: none;
 }
 .screenContent{
-  position: absolute;
+  position: fixed;
   transform: translateX(-50%);
   left: 50%;
   top: 10%;
@@ -442,11 +441,18 @@ footer{
   background-color: var(--white);
   border: 1px solid var(--black);
   border-radius: 3px;
+  display: none;
 }
 .screenClose{
   width: 6%;
   float: right;
   cursor: pointer;
 }
-
+.screenTitle{
+  padding: 30px 0 10px 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
+}
 
