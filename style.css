@@ -166,7 +166,7 @@ h1 {
 main {
   background-color: var(--white);
   position: relative;
-  margin: 157px auto;
+  margin: 157px auto 20px auto;
   padding: 13px;
   width: 84%;
   border-radius: 3px;
@@ -364,6 +364,7 @@ main {
   position: relative;
   width: 100%;
   height: 15vw;
+  margin-bottom: 6vw;
 
   background-color: crimson;
 }
@@ -371,7 +372,7 @@ main {
   position: absolute;
   width: 20%;
   height: 100%;
-
+  overflow: hidden;
 }
 #badgeBox0{
   left: 0;
@@ -400,16 +401,52 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-footer {
-  background-color: aliceblue;
-  width: 10px;
-  height: 200vh;
+footer{
+  width: 100%;
+  padding: 5%;
+  background-color: var(--color11);
 }
+#social{
+  position: relative;
+  width: 100%;
+}
+.socialIcon{
+  position: relative;
+  width: 6%;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#footerDescription{
+  display: block;
+  padding-left: 43%;
+  text-align: justify;
+  color: rgb(247, 244, 244);
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.185);
+}
+
+.screenBack{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+.screenContent{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 10%;
+  width: 75%;
+  height: 70%;
+  padding: 15px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 3px;
+}
+.screenClose{
+  width: 6%;
+  float: right;
+  cursor: pointer;
+}
+
+
