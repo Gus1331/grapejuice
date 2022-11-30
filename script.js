@@ -7,8 +7,10 @@ let badgeIcon2 = document.getElementById("badgeIcon2");
 let screen = document.getElementById("screen");
 let screen0 = document.getElementById("screen0");
 let screen1 = document.getElementById("screen1");
+let frame = document.getElementById("productFrame");
 let imgA = document.getElementById("imgA");
 let imgB = document.getElementById("imgB");
+let notfication = document.getElementById("notification");
 
 function screenClose(){
     screen.style.display = "none";
@@ -52,17 +54,26 @@ function badgeOff(){
 function imgPosition0(){
     imgA.style.transform = "translateX(0)";
     imgB.style.transform = "translateX(0)";
+    frame.style.backgroundColor = "var(--color06)"
 }
 function imgPosition1(){
     imgA.style.transform = "translateX(-100%)";
     imgB.style.transform = "translateX(-100%)";
+    frame.style.backgroundColor = "var(--color05)"
 }
 function imgPosition2(){
     imgA.style.transform = "translateX(-200%)";
     imgB.style.transform = "translateX(-200%)";
+    frame.style.backgroundColor = "var(--color04)"
 }
 
-
+function error(){
+    notfication.style.display = "block";
+    setTimeout(error0,3649);
+}
+function error0(){
+    notfication.style.display = "none";
+}
 
 
 

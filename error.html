@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>St. Monica - Suco de Uva Tinto Integral</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="content/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main style="height: 60vh;">
+        <h2 style="font-size: 3em; text-indent: 30px;">Erro</h2>
+    </main>
+    <header>
+        <div id="logoTopDiv"><img id="logoTopImg" src="content/logo.png" alt="St. Monica Logo"></div>
+        <h1>St. Monica</h1>
+        <nav id="headerNav">
+            <ul>
+                <li onclick="screenOn0();">Sobre nós</li>
+                <li id="navMiddleLi">Contato</li>
+                <li onclick="screenOn1();">Projeto</li>
+            </ul>
+        </nav>
+        <hr id="headerLine">
+    </header>
+
+
+    <aside id="author">
+        <div id="authorFrame">
+            <img src="" alt="">
+        </div>
+        <p id="authorText"></p>
+    </aside>
+
+    <footer>
+        <div id="social">
+            <a href="#" rel="author" target="_blank"><img src="content/social00.jpg" alt="Social Media Logo"
+                    class="socialIcon"></a>
+            <a href="#" rel="author" target="_blank"><img src="content/social01.jpg" alt="Social Media Logo"
+                    class="socialIcon"></a>
+            <a href="#" rel="author" target="_blank"><img src="content/social02.jpg" alt="Social Media Logo"
+                    class="socialIcon"></a>
+            <a href="#" rel="author" target="_blank"><img src="content/social03.jpg" alt="Social Media Logo"
+                    class="socialIcon"></a>
+        </div>
+        <p id="footerDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, natus fugiat qui
+            distinctio voluptatem eveniet, cumque recusandae error veniam vel numquam consectetur earum excepturi
+            doloremque adipisci deleniti ullam, deserunt libero. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Itaque, modi eius consectetur optio numquam, delectus alias voluptatibus tenetur possimus soluta error
+            aliquam explicabo cum saepe similique non blanditiis doloribus quisquam.</p>
+        <div id="optionsButtons">
+            <!-- Em constução... -->
+        </div>
+    </footer>
+
+    <article class="screenBack" id="screen" onclick="screenClose();">
+    </article>
+    <div class="screenContent" id="screen0">
+        <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
+        <h2 class="screenTitle">Sobre Nós</h2>
+    </div>
+    <div class="screenContent" id="screen1">
+        <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
+        <h2 class="screenTitle">O Projeto</h2>
+    </div>
+
+
+
+</body>
+
+</html>

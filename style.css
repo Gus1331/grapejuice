@@ -44,6 +44,7 @@ html {
 
 html {
   scroll-behavior: smooth;
+  min-width: 359px;
 }
 
 /* W3 schools
@@ -232,7 +233,6 @@ main {
   padding: 0 20px;
 }
 #productName{
-  padding: 0 auto;
   background-color: var(--black);
   color: var(--white);
   margin: 4px auto;
@@ -366,7 +366,6 @@ main {
   width: 100%;
   height: 12vw;
   margin-bottom: 6vw;
-  overflow: none;
 }
 .badgeBox{
   position: absolute;
@@ -456,3 +455,87 @@ footer{
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.237);
 }
 
+#notification{
+  display: none;
+  position: fixed;
+  bottom: 3%;
+  width: 50vw;
+  height: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: rgb(233, 33, 33);
+}
+#notification > p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  transform: translateY(50%);
+}
+
+
+
+
+@media screen and (max-width:990px) {
+
+}
+@media screen and (max-width: 630px) {
+  header{
+    height: 28%;
+  }
+  h1{
+    float: right;
+  }
+  #headerNav{
+    width: max-content;
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+    padding: 0 auto;
+  }
+  #headerLine{
+    bottom: 10px;
+  }
+  #logoTopDiv{
+    background-color: var(--white);
+  }
+  main{
+    margin-top: 52%;
+    width: 100%;
+  }
+  #productFrame{
+    min-width: 0;
+    width: 100%;
+    height: 245px;
+    margin-bottom: 10px;
+  }
+  #productContent{
+    display: block;
+    padding: 0;
+    height: 50%;
+    left: -13px;
+    position: relative;
+  }
+  #productName{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #productSimilar{
+    width: 213%;
+  }
+  #badgeIcons{
+    margin-bottom: 60vh;
+    height: 12vh;
+  }
+  .badgeBox{
+    width: 46%;
+    height: 185%;
+  }
+  #badgeBox0{
+    top: 200%;
+  }
+  #badgeBox2{
+    top: 400%;
+  }
+}

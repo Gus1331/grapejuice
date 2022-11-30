@@ -43,10 +43,10 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsam itaque necessitatibus sunt quameveniet placeat laboriosam mollitia corrupti quis, minima molestiae explicabo assumenda totam qui,debitis deserunt expedita laudantium?</p>
             </div>
             <div id="productBuySection">
-                <input id="btnBuy0" class="btnBuy" type="button" value="Encomendar">
+                <input id="btnBuy0" class="btnBuy" type="button" value="Encomendar" onclick="error();">
                 <div id="btnBuy12">
                     <input id="btnBuy1" type="number" name="cep" placeholder="xxxxx-xxx" maxlength="8" minlength="8">
-                    <input id="btnBuy2" class="btnBuy" type="button" value="Calcular Frete">
+                    <input id="btnBuy2" class="btnBuy" type="button" value="Calcular Frete" onclick="error();">
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@
                 <a href="error.html" target="_self" rel="next">
                     <div class="similarItem">
                         <img class="similarImg" src="content/front.png" alt="Vinho">
-                        <h3 c badgeimilarName">Vinho Branco</h3>
+                        <h3 class="similarName">Vinho Branco</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta. Repudiandae vitae maiores.</p>
                     </div>
                 </a>
@@ -112,14 +112,15 @@
         <nav id="headerNav">
             <ul>
                 <li onclick="screenOn0();">Sobre nós</li>
-                <li id="navMiddleLi">Contato</li>
+                <li id="navMiddleLi" onclick="error();">Contato</li>
                 <li onclick="screenOn1();">Projeto</li>
             </ul>
         </nav>
         <hr id="headerLine">
     </header>
 
-
+    
+    
     <aside id="author">
         <div id="authorFrame">
             <img src="" alt="">
@@ -139,19 +140,24 @@
             <!-- Em constução... -->
         </div>
     </footer>
-
+    
     <article class="screenBack" id="screen" onclick="screenClose();">
     </article>
     <div class="screenContent" id="screen0">
         <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
         <h2 class="screenTitle">Sobre Nós</h2>
+        <p>Em 1927 Francesca Ricci herdou as terras de sua família, que mais tarde se tornou o Vinhedo St. Monica em homenagem a sua querida avó.</p>
     </div>
     <div class="screenContent" id="screen1">
         <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
         <h2 class="screenTitle">O Projeto</h2>
+        <p>Este trabalho tem como objetivo mostrar as etapas do processo de fabricação de um suco de uva integral, desde os cuidados tidos no plantio da uva, até o momento em que o produto final sai de nossa fábrica.</p>
     </div>
-
-
+    
+    <div id="notification">
+        <p>Error Item not found</p>
+    </div>
+    
     
 </body>
 
