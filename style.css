@@ -515,7 +515,10 @@ strong{
     bottom: 4%;
     right: 50%;
   }
-
+  .nameLines{
+    right: -2%;
+    position: relative;
+  }
 }
 @media screen and (max-width: 630px) {
   header{
