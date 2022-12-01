@@ -23,6 +23,7 @@
         <div id="productFrame">
             <img class="productImg" id="imgA" src="content/front.png" alt="Suco De Uva Tinto Integral">
             <img class="productImg" id="imgB" src="content/back.png" alt="Suco De Uva Tinto Integral">
+            <img class="productImg" id="imgC" src="content/stamp.png" alt="Logo Vinhedo Santa Mônica" >
             <div id="productNav">
                 <ul id="productNavUl">
                     <li class="navPoint" onclick="imgPosition0();">
@@ -40,7 +41,7 @@
             <h2 id="productName">Suco de Uva Tinto Integral</h2>
             <hr class="nameLines">
             <div id="productDescription">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus ipsam itaque necessitatibus sunt quameveniet placeat laboriosam mollitia corrupti quis, minima molestiae explicabo assumenda totam qui,debitis deserunt expedita laudantium?</p>
+                <p>A Vinícola St. Monica, leva ao mercado a sua já consagrada linha de sucos de uva integrais em nova garrafa exclusiva, quadrada e em tom verde-oliva. Produzida pela Wheaton Brasil Vidros, maior fabricante de embalagens de vidro do mundo. Coloração bordo, Aroma frutado. Paladar muito gostoso, conserva o gosto natural da fruta.</p>
             </div>
             <div id="productBuySection">
                 <input id="btnBuy0" class="btnBuy" type="button" value="Encomendar" onclick="error();">
@@ -59,28 +60,28 @@
                     <div class="similarItem">
                         <img class="similarImg" src="content/front.png" alt="Suco">
                         <h3 class="similarName">Suco</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta. Repudiandae vitaemaiores.</p>
+                        <p>Suco Natural de uva, safra de 2021 processada especialmente para ocasiões importantes para você.</p>
                     </div>
                 </a>
                 <a href="error.html" target="_self" rel="next">
                     <div class="similarItem">
                         <img class="similarImg" src="content/front.png" alt="Vinho">
                         <h3 class="similarName">Vinho Tinto</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta. Repudiandae vitae maiores.</p>
+                        <p>Vinho Tinto levemente adoçado, safra prêmium de 2014 perfeita para ocasiões sociais.</p>
                     </div>
                 </a>
                 <a href="error.html" target="_self" rel="next">
                     <div class="similarItem">
                         <img class="similarImg" src="content/front.png" alt="Vinho">
                         <h3 class="similarName">Vinho Branco</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta. Repudiandae vitae maiores.</p>
+                        <p>Vinho Branco, safra de 2022, uma bebida perfeita para ser servida com aperitivos.</p>
                     </div>
                 </a>
                 <a href="error.html" target="_self" rel="next">
                     <div class="similarItem">
                         <img class="similarImg" src="content/front.png" alt="Vinho">
                         <h3 class="similarName">Vinho Tinto</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, dicta. Repudiandae vitae maiores.</p>
+                        <p>Vinho Tinto comum, safra de 2019, nossa especialidade e ganhadora de prêmios estaduais.</p>
                     </div>
 
                 </a>
@@ -112,7 +113,7 @@
         <nav id="headerNav">
             <ul>
                 <li onclick="screenOn0();">Sobre nós</li>
-                <li id="navMiddleLi" onclick="error();">Contato</li>
+                <li id="navMiddleLi" onclick="screenOn2();">Contato</li>
                 <li onclick="screenOn1();">Projeto</li>
             </ul>
         </nav>
@@ -135,7 +136,8 @@
             <a href="#" rel="author" target="_blank"><img src="content/social02.jpg" alt="Social Media Logo" class="socialIcon"></a>
             <a href="#" rel="author" target="_blank"><img src="content/social03.jpg" alt="Social Media Logo" class="socialIcon"></a>
         </div>
-        <p id="footerDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, natus fugiat qui distinctio voluptatem eveniet, cumque recusandae error veniam vel numquam consectetur earum excepturi doloremque adipisci deleniti ullam, deserunt libero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, modi eius consectetur optio numquam, delectus alias voluptatibus tenetur possimus soluta error aliquam explicabo cum saepe similique non blanditiis doloribus quisquam.</p>
+        <p class="footerDescription">Trabalho dirigido e orientado pela professora Márcia Regina Luvizzoto, feito pelos alunos <strong>Ablene Borges</strong>, <strong>Emanuele de Sá</strong> e <strong>Gabriel Rocha</strong>, estudantes do SENAI “Almirante Tamandaré”, no curso de auxiliar de linha de produção, turma da Wheaton do período da manhã.</p>
+        <p class="footerDescription"> Agradecemos primeiramente as nossas famílias que nos apoiaram nessa empreitada, ao aluno <a href="https://github.com/Gus1331" rel="author" target="_blank"><abbr id="DescriptionCredits" title="Visite meu github">Gustavo Souza</abbr></a> que elaborou o site da nossa vinícola e a nossa querida professora Márcia que nos ajudou durante todo nosso processo de aprendizagem, assim tornando-nos seres humanos melhores. </p>
         <div id="optionsButtons">
             <!-- Em constução... -->
         </div>
@@ -146,12 +148,30 @@
     <div class="screenContent" id="screen0">
         <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
         <h2 class="screenTitle">Sobre Nós</h2>
-        <p>Em 1927 Francesca Ricci herdou as terras de sua família, que mais tarde se tornou o Vinhedo St. Monica em homenagem a sua querida avó.</p>
+        <p>Em 1927, na ilha de Riomaggiore, em Cinque Terre, Francesca Ricci com seus 25 anos, herdou as terras de sua família, que mais tarde foi nomeado Vinhedo St. Monica, em homenagem a sua querida avó, Monica Ricci. </p>
+        <p>Após 30 anos, em 1957, Francesca e seu marido decidiram celebrar seus 25 anos de casamento, viajando para a América do Sul, desembarcaram no nordeste brasileiro e visitaram as cidades mais turísticas, com isso conheceram a cidade de Floresta no interior de Pernambuco, e se apaixonaram pela beleza local, e seu clima quente e agradável, que por coincidência é o melhor lugar para o plantio de sua melhor uva, a uva Merlot.</p>
+        <p>Depois de 6 longos anos de planejamento e dedicação, o vinhedo inaugurou sua primeira filial no Brasil, sendo assim a primeira vinícola local.</p>
+        <p>Desde quando a vinícola foi criada ela tem como objetivo fornecer para seus clientes os melhores produtos, com a melhor qualidade do mercado, visando seu sucesso a longo prazo.</p>
+    </div>
+    <div class="screenContent" id="screen2">
+        <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
+        <h2 class="screenTitle">Contato</h2>
+        <p>EMAIL: vinhedostmonica@gmail.com </p>
+        <p>TELEFONE: +39  620 421 838</p>
     </div>
     <div class="screenContent" id="screen1">
         <img src="content/close-icon.png" onclick="screenClose()" class="screenClose">
         <h2 class="screenTitle">O Projeto</h2>
-        <p>Este trabalho tem como objetivo mostrar as etapas do processo de fabricação de um suco de uva integral, desde os cuidados tidos no plantio da uva, até o momento em que o produto final sai de nossa fábrica.</p>
+        <p>Este projeto teve como objetivo educacional promover o estudo do ciclo PDCA (Plan-Do-Check-Action) na indústria visando a fabricação do suco de uva tinto integral</p>
+        <p>Fase Plan (Planejamento)</p>
+        <p>Compõe-se toda parte de implantação da empresa e do planejamento da fabricação do produto desde os cuidados tidos com a matéria prima, até o momento em que o produto final deixa nossa fábrica para ser entregue ao consumidor.</p>
+        <p>Fase Do (Fazer)</p>
+        <p>Consiste em fazer treinamentos e especializações com os funcionários e suas competências necessárias para sua contratação na empresa.</p>
+        <p>Fase Check (Verificação)</p>
+        <p>Contém todo os tipos de verificação no processo produtivo da indústria, desde a conferência do maquinário a inspeção do produto final</p>
+        <p>Fase Action (Ação)</p>
+        <p>Onde observamos se está tudo conforme o planejado e decidimos se vamos voltar as fases anteriores do ciclo PDCA ou colocamos tudo em prática.</p>
+        <p>Usando as ferramentas da qualidade concluímos o nosso trabalho com excelência.</p>
     </div>
     
     <div id="notification">
