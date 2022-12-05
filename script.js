@@ -13,6 +13,7 @@ let imgA = document.getElementById("imgA");
 let imgB = document.getElementById("imgB");
 let imgC = document.getElementById("imgC");
 let notfication = document.getElementById("notification");
+let author = document.getElementById("author");
 
 function screenClose(){
     screen.style.display = "none";
@@ -85,7 +86,9 @@ function error0(){
     notfication.style.display = "none";
 }
 
-
+function authorClose(){
+    author.style.display = "none";
+}
 
 
 
